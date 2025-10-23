@@ -1,0 +1,28 @@
+# Flake8 Configuration File
+#
+# Flake8 is a code style checker that ensures Python code follows
+# PEP 8 style guidelines. This runs during the Build stage of the pipeline.
+
+[flake8]
+# Maximum line length
+max-line-length = 100
+
+# Files and directories to exclude from checking
+exclude =
+    .git,
+    __pycache__,
+    .pytest_cache,
+    htmlcov,
+    *.egg-info,
+    build,
+    dist,
+    venv,
+    .venv
+
+# Error codes to ignore
+# E203: whitespace before ':' (conflicts with black formatter)
+# W503: line break before binary operator (outdated rule)
+ignore = E203, W503
+
+# Maximum complexity for functions
+max-complexity = 10
