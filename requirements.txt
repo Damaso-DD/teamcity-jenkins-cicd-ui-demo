@@ -1,0 +1,14 @@
+# Python Dependencies for CI/CD Demo Pipeline
+#
+# This file lists all Python packages required to run the application
+# and its tests. The CI/CD pipeline will install these dependencies
+# during the build stage.
+
+# Testing framework - used to write and run unit tests
+pytest==7.4.3
+
+# Test coverage reporting - shows which code is tested
+pytest-cov==4.1.0
+
+# Code formatting checker - ensures consistent code style
+flake8==6.1.0
